@@ -1,7 +1,5 @@
 //선택 완료된 페이지에서 동명 추출 동명 추출
-
 inputs = document.getElementById('dsForm').getElementsByTagName('input')
-
 var inputarray = [];
 for ( row in inputs )
 {
@@ -13,11 +11,9 @@ for ( row in inputs )
 		var ds = ts.indexOf("\" nm=\"", 0)+1;
 		var de = ts.indexOf("\"", ds)+1;
 		var df = ts.indexOf("\"", de);
-
 		var gs = ts.indexOf("\" data_nm=\"", 0)+1;
 		var ge = ts.indexOf("\"", gs)+1;
 		var gf = ts.indexOf("\"", ge);
-
 		var vs = ts.indexOf("\" value=\"", 0)+1;
 		var ve = ts.indexOf("\"", vs)+1;
 		var vf = ts.indexOf("\"", ve);
